@@ -10,7 +10,7 @@ Este proyecto es una API sencilla construida con **Next.js** que proporciona tre
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone https://github.com/rpiealb297/nextjs-api.git
+   git clone https://github.com/rpiealb297/mi-app-next.git
    cd nextjs-api
    ```
 
