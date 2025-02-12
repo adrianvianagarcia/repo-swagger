@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# API con Next.js
 
-## Getting Started
+Este proyecto es una API sencilla construida con **Next.js** que proporciona tres endpoints:
 
-First, run the development server:
+- `GET /api/users` → Devuelve una lista de usuarios en formato JSON.
+- `GET /api/products` → Devuelve una lista de productos en formato JSON.
+- `POST /api/product` → Permite agregar un producto enviando un JSON con `name` y `price`.
+
+## 📦 Instalación
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/rpiealb297/nextjs-api.git
+   cd nextjs-api
+   ```
+
+2. **Instalar dependencias:**
+   ```bash
+   npm install
+   ```
+
+## 🚀 Ejecución en local
+
+Para iniciar el servidor en desarrollo:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Esto iniciará un servidor en `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 🔗 Endpoints disponibles
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Usuarios:** `http://localhost:3000/api/users`
+- **Productos:** `http://localhost:3000/api/products`
+- **Subir producto:** `http://localhost:3000/api/product` (requiere JSON con `name` y `price`: {"name":"producto1", "price":5.5})
 
-## Learn More
+## 🌍 Despliegue
 
-To learn more about Next.js, take a look at the following resources:
+Puedes desplegar la API en **Vercel** con un solo comando:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+vercel deploy
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+O subirlo a cualquier servidor compatible con **Next.js**.
 
-## Deploy on Vercel
+## 📄 Licencia
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Este proyecto está bajo la Licencia MIT. Puedes usarlo y modificarlo libremente.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+**¡Listo para usar! 🚀**
